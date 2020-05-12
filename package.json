@@ -1,0 +1,27 @@
+{
+  "name": "z-calendar",
+  "version": "1.0.0",
+  "description": "获取某年某月的日历",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zero9527/z-calendar.git"
+  },
+  "keywords": [
+    "calendar"
+  ],
+  "author": "zero9527",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zero9527/z-calendar/issues"
+  },
+  "homepage": "https://github.com/zero9527/z-calendar#readme",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
