@@ -1,4 +1,4 @@
-const Calendar = require('../src/index').default;
+const Calendar = require('../dist/index').default;
 
 describe('z-calendar测试', () => {
   test('不传参数', () => {

@@ -71,7 +71,7 @@ Calendar.prototype = {
 
     // 下周日，一周第一天为周日(new Date().getDay() === 0为周日)
     const nextWeekday1 = this.getDateString(this.year, this.month, date + 1);
-    if (this.validDate(nextWeekday1) && week < 10) {
+    if (this.validDate(nextWeekday1)) {
       this.generate(week + 1, nextWeekday1);
     }
   },
