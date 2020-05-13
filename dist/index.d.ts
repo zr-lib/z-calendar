@@ -8,7 +8,6 @@ export interface CalendarThis {
     year: string;
     month: string;
     monthList: any[];
-    today: string;
     init: () => void;
     generate: (week: number | undefined, monthDate1: string) => void;
     validDate: (date: string) => boolean;

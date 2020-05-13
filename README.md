@@ -1,6 +1,7 @@
 # z-calendar
 按月份生成的日历
-一月按周分隔，一周以周日开始
+
+> 一月按周分隔，一周以周日开始
 
 
 ## 一个栗子
@@ -8,6 +9,30 @@ vue-calendar
 * [源码](https://github.com/zero9527/vue-calendar)
 * [在线查看](https://zero9527.github.io/vue-calendar/)
 
+
+## 返回值 @returns
+* initialDate: 实例化传递的值
+* year: 年份
+* month: 月份
+* monthList: 月份的数据
+
+
+```js
+export interface CalendarThis {
+  description: string;
+  initialDate?: string;
+  year: string;
+  month: string;
+  monthList: any[];
+  init: () => void;
+  generate: (week: number | undefined, monthDate1: string) => void;
+  validDate: (date: string) => boolean;
+  getDateString(year: number, month: number, date: number): string;
+  getDateParams: (timestamp?: string | undefined) => any;
+}
+
+export default function Calendar(this: CalendarThis, initialDate?: string): void;
+```
 
 ## 使用
 ```js

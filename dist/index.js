@@ -19,7 +19,6 @@
         this.year = '';
         this.month = '';
         this.monthList = [];
-        this.today = '';
         this.init();
     }
     exports.default = Calendar;
@@ -32,7 +31,6 @@
             }
             this.year = _year;
             this.month = _month;
-            this.today = new Date().toLocaleDateString();
             var monthDate1 = this.year + "/" + this.month + "/1"; // 1号
             this.generate(0, monthDate1);
         },

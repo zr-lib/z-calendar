@@ -9,7 +9,6 @@ export interface CalendarThis {
   year: string;
   month: string;
   monthList: any[];
-  today: string;
   init: () => void;
   // 生成按星期分组的月份日历
   generate: (week: number | undefined, monthDate1: string) => void;
@@ -26,7 +25,6 @@ export default function Calendar(this: CalendarThis, initialDate?: string) {
   this.year = '';
   this.month = '';
   this.monthList = [];
-  this.today = '';
 
   this.init();
 }
@@ -40,7 +38,6 @@ Calendar.prototype = {
     }
     this.year = _year;
     this.month = _month;
-    this.today = new Date().toLocaleDateString();
     const monthDate1 = `${this.year}/${this.month}/1`; // 1号
     this.generate(0, monthDate1);
   },
