@@ -84,9 +84,10 @@ Calendar.prototype = {
   },
   // @return 2020/05/01
   getDateString(year: number, month: number, date: number) {
-    const _month = `${month}`.padStart(2, '0');
-    const _date = `${date}`.padStart(2, '0');
-    return `${year}/${_month}/${_date}`;
+    const dateString = `${year}/${month < 10 ? `0${month}` : month}/${
+      date < 10 ? `0${date}` : date
+    }`;
+    return dateString;
   },
   getDateParams(timestamp?: string) {
     const _Date = timestamp ? new Date(timestamp) : new Date();

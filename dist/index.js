@@ -78,9 +78,8 @@
         },
         // @return 2020/05/01
         getDateString: function (year, month, date) {
-            var _month = ("" + month).padStart(2, '0');
-            var _date = ("" + date).padStart(2, '0');
-            return year + "/" + _month + "/" + _date;
+            var dateString = year + "/" + (month < 10 ? "0" + month : month) + "/" + (date < 10 ? "0" + date : date);
+            return dateString;
         },
         getDateParams: function (timestamp) {
             var _Date = timestamp ? new Date(timestamp) : new Date();
