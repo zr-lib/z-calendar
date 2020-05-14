@@ -3,6 +3,10 @@
 
 > 一月按周分隔，一周以周日开始
 
+## 安装
+```
+npm i z-calendar
+```
 
 ## 一个栗子
 vue-calendar
